@@ -15,11 +15,7 @@
                     android:pathPattern="/.*"
                     android:scheme="https" />
             </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".SplashScreen">
             <intent-filter android:order="1">
@@ -33,7 +29,14 @@
                     android:pathPattern="/.*"
                     android:scheme="https" />
             </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
+        
         <activity android:name=".Main2Activity">
             <intent-filter android:order="1">
                 <action android:name="android.intent.action.VIEW" />
