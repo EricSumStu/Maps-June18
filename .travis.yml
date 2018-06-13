@@ -1,0 +1,42 @@
+language: android
+jdk: oraclejdk8
+sudo: required
+before_cache:
+- rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
+- rm -fr $HOME/.gradle/caches/*/plugin-resolution/
+cache:
+  directories:
+  - "$HOME/.gradle/caches/"
+  - "$HOME/.gradle/wrapper/"
+  - "$HOME/.android/build-cache"
+android:
+  components:
+    # Uncomment the lines below if you want to
+    # use the latest revision of Android SDK Tools
+    - tools
+    - tools
+    - platform-tools
+
+    # The BuildTools version used by your project
+    - build-tools-27.0.3
+
+    # The SDK version used to compile your project
+    - android-28
+    - android-26
+    - android-22
+
+    # Additional components
+    - extra-google-google_play_services
+    - extra-google-m2repository
+    - extra-android-m2repository
+    - addon-google_apis-google-28
+
+    # Specify at least one system image,
+    # if you need to run emulator(s) during your tests
+    - sys-img-armeabi-v7a-android-28
+    - sys-img-armeabi-v7a-android-22
+script: "./gradlew clean assembleDebug check"
+notifications:
+  slack:
+    secure: B0sD4kUpb60Xfy2mUpwSfsRAARZ4l3Bw+OIqQl9r+hWhQYuXBpJvFwVZVlTlO08LIM3ArGSZs9sMCLSxpxyfKBkWziEjGX9VOEdZ5Fw0yuqigvkFyxLja0xNvljX3/Y9YIG/gYcZVT7FGVOMInLhvVcAoM+tZpqbreJVyttKGTQJcYgasMTNdvBjw4aqd0t3jr5WzHzfGVMLH9L+K//TDo0RaOMGqhH22/848U7Y6AOnDMGXGPthiOjlv5gLEtrjG0T0Z2U4/apWcHJ4Imo9jle+FGs6B+epAuJKOcXnY7/tYwe+T3gcebBUpT8IVaVqBNeYaTpbK8SeTy3g1LZesEfumf3KmLfkzEKvOeLFSeSEgmXvsXcxcYsHuszUmEUrIVAiAICin4SFz/ta7bFwlG+Ppae1fqOv8EdOxjQwXJ2uDXzOEUnwj20lOOB1p3xP+eAqwUO3E9Kp00xrKPhzV2Vz0Wj6nbI/yzKJC6u/yUdbxZ67AJeirq+9ApaVMxTDPxBObhMc9jgcVAG357LZMIxZ8n2Rx+3u64mfGWrqq/oKtvoZnszU/3hlOSUAqk2z2Mr8oLVdQ/9FrBM0isv1FaaHEYpn169rTcMaxf6F5fr3RqhwNu47qLTJf8S3a4OXFxJZRQpFuqwl2MNg/JWoaNOXFYScqRby50SVCnBclSQ=
+email: false
