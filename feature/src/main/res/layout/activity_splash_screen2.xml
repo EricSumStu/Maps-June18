@@ -1,11 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.Constraints xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#545454"
     tools:context=".GroundFoorFunctions">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="0dp"
+        android:layout_height="477dp"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="TODO"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/groundfloor" />
 
     <Button
         android:id="@+id/button"
@@ -24,12 +39,12 @@
         android:id="@+id/QRScannerBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_toStartOf="@+id/textView"
         android:text="QR Scanner"
-        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="515dp" />
+        tools:layout_editor_absoluteY="515dp"
+        tools:ignore="MissingConstraints" />
 
     <Spinner
         android:id="@+id/spinner"
@@ -37,10 +52,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="63dp"
-        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="26dp" />
+        tools:layout_editor_absoluteY="26dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView"
@@ -54,59 +68,55 @@
 
         />
 
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="match_parent"
-        android:layout_height="511dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:src="@drawable/groundfloor" />
-
-    <View
-        android:id="@+id/line1"
-        android:layout_width="2dp"
-        android:layout_height="73dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="216dp"
-        android:layout_marginStart="72dp"
-        android:background="@color/colorAccent"
-        android:visibility="invisible"/>
-
     <View
         android:id="@+id/line2"
-        android:layout_width="2dp"
-        android:layout_height="32dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/line1"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="241dp"
+        android:layout_width="40dp"
+        android:layout_height="2dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
         android:background="@color/colorAccent"
-        android:visibility="invisible"/>
+
+
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="246dp" />
+
 
     <View
         android:id="@+id/line3"
-        android:layout_width="3dp"
-        android:layout_height="33dp"
-        android:layout_alignParentStart="true"
+        android:layout_width="2dp"
+        android:layout_height="32dp"
+        android:layout_alignEnd="@+id/QRScannerBtn"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="97dp"
-        android:layout_marginTop="259dp"
+        android:layout_marginBottom="351dp"
         android:background="@color/colorAccent"
-        android:rotation="90"
-        android:visibility="invisible"/>
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/line1"
+        app:layout_constraintVertical_bias="0.282"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="113dp" />
 
     <View
-        android:id="@+id/line4"
-        android:layout_width="3dp"
-        android:layout_height="27dp"
+        android:id="@+id/line1"
+        android:layout_width="35dp"
+        android:layout_height="2dp"
         android:layout_alignParentStart="true"
-        android:layout_alignTop="@+id/line2"
-        android:layout_marginStart="113dp"
-        android:layout_marginTop="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="290dp"
+        android:layout_marginStart="54dp"
         android:background="@color/colorAccent"
-        android:visibility="invisible"/>
+
+        android:rotation="90"
+
+        app:layout_constraintBottom_toTopOf="@+id/line2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line2"
+        app:layout_constraintVertical_bias="0.593" />
 
 
-</RelativeLayout>
+</android.support.constraint.Constraints>

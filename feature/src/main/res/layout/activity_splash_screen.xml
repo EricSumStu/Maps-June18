@@ -6,24 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".SplashScreen">
 
-    <ImageView
-        android:layout_width="151dp"
-        android:layout_height="185dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="39dp"
-        android:src="@drawable/titlesausages"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <TextView
         android:id="@+id/textView2"
         android:layout_width="309dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="211dp"
+        android:layout_marginBottom="218dp"
         android:text="ATHLONE INTERNAL MAP"
         android:textColor="#002561"
         android:textSize="25dp"
@@ -31,5 +20,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="138dp"
+        android:layout_height="179dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        app:srcCompat="@drawable/titlesausages" />
+
 
 </RelativeLayout>
