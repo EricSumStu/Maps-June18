@@ -65,6 +65,15 @@ public class GroundFloorFunctions extends AppCompatActivity  {
 
         });
 
+        Button btn4 = (Button) findViewById(R.id.btn4);
+        btn4.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent myIntent = new Intent(view.getContext(), MainMenu.class);
+                startActivityForResult(myIntent, 0);
+            }
+
+        });
+
 
 
         PINKLINE = (View)findViewById(R.id.line1);
