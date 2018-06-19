@@ -11,12 +11,12 @@ public class FirstFloorFunctions extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_firstfloorfunctions);
 
         Button next = (Button) findViewById(R.id.button2);
         next.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent myIntent = new Intent(view.getContext(), GroundFoorFunctions.class);
+                Intent myIntent = new Intent(view.getContext(), GroundFloorFunctions.class);
                 startActivityForResult(myIntent, 0);
             }
 

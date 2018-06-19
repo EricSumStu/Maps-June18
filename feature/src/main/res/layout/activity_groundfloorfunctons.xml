@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#545454"
-    tools:context=".GroundFoorFunctions">
+    tools:context=".GroundFloorFunctions">
 
     <Button
         android:id="@+id/button"
@@ -107,6 +107,73 @@
         android:layout_marginTop="8dp"
         android:background="@color/colorAccent"
         android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="50dp"
+        android:layout_height="88dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/line3"
+        android:layout_marginEnd="6dp"
+        app:srcCompat="@mipmap/ic_launcher_foreground"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="49dp"
+        android:layout_height="47dp"
+        android:layout_below="@+id/line1"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="-216dp"
+        android:layout_toEndOf="@+id/QRScannerBtn"
+        app:srcCompat="@mipmap/ic_launcher_foreground"
+        android:visibility="invisible"/>
+
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="54dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/line1"
+        android:layout_marginEnd="130dp"
+        app:srcCompat="@mipmap/ic_launcher_foreground"
+        android:visibility="invisible"/>
+
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="56dp"
+        android:layout_height="44dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="-113dp"
+        android:layout_marginTop="184dp"
+        android:layout_toStartOf="@+id/line4"
+        app:srcCompat="@mipmap/ic_launcher_foreground"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="56dp"
+        android:layout_height="44dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/imageView5"
+        android:layout_marginEnd="96dp"
+        app:srcCompat="@mipmap/ic_launcher_foreground"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="62dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="133dp"
+        android:layout_marginEnd="-113dp"
+        android:layout_toStartOf="@+id/line4"
+        app:srcCompat="@mipmap/ic_launcher_foreground"
+        android:visibility="invisible"/>
+
+
 
 
 </RelativeLayout>

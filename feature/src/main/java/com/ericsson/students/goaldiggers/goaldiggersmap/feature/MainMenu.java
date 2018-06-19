@@ -16,7 +16,7 @@ public class MainMenu extends AppCompatActivity {
         Button btn1 = (Button) findViewById(R.id.btn31list);
         btn1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent myIntent = new Intent(view.getContext(), GroundFoorFunctions.class);
+                Intent myIntent = new Intent(view.getContext(), GroundFloorFunctions.class);
                 startActivityForResult(myIntent, 0);
             }
 

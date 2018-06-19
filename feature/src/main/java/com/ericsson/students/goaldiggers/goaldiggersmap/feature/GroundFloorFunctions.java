@@ -3,24 +3,22 @@ package com.ericsson.students.goaldiggers.goaldiggersmap.feature;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.ContextMenu;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ListView;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 
-public class GroundFoorFunctions  extends AppCompatActivity  {
+public class GroundFloorFunctions extends AppCompatActivity  {
 
 // define spinner
 
     Spinner sp ;
 
     View PINKLINE,PINKLINE2,PINKLINE3,PINKLINE4,PINKLINE5;
-
+    View image4,image5,image6,image8,image9,image10;
 
     //DEFINE TEXT VIEW
 
@@ -28,7 +26,7 @@ public class GroundFoorFunctions  extends AppCompatActivity  {
 
     //make string Arrary
 
-    String names[] = {"----Select----","Athlone","Lars Magnus","Paris","Clear All"};
+    String names[] = {"----Select----","Athlone","Lars Magnus","Coffee Docks","Clear All"};
 
     //defins array adapter of string type
 
@@ -44,10 +42,11 @@ public class GroundFoorFunctions  extends AppCompatActivity  {
 
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_groundfloorfunctons);
 
         sp = (Spinner)findViewById(R.id.spinner);
 
+//        adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,names);
         adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,names);
 
         display_data = (TextView)findViewById(R.id.textView);
@@ -72,6 +71,16 @@ public class GroundFoorFunctions  extends AppCompatActivity  {
         PINKLINE2 = (View)findViewById(R.id.line2);
         PINKLINE3 = (View)findViewById(R.id.line3);
         PINKLINE4 = (View)findViewById(R.id.line4);
+
+
+
+
+        image4 = (ImageView)findViewById(R.id.imageView4);
+        image5 = (ImageView)findViewById(R.id.imageView5);
+        image6 = (ImageView)findViewById(R.id.imageView6);
+        image8 = (ImageView)findViewById(R.id.imageView8);
+        image9 = (ImageView)findViewById(R.id.imageView9);
+        image10 = (ImageView)findViewById(R.id.imageView10);
 
 
 
@@ -110,7 +119,7 @@ public class GroundFoorFunctions  extends AppCompatActivity  {
 
                     case 3:
 
-                        record = "Paris";
+                        record = "Coffee";
 
 
 
@@ -163,6 +172,9 @@ public class GroundFoorFunctions  extends AppCompatActivity  {
 
     }
 
+
+
+
         if (record.equals("Lars Magnus"))
 
         {
@@ -177,6 +189,21 @@ public class GroundFoorFunctions  extends AppCompatActivity  {
         }
 
 
+        if (record.equals("Coffee"))
+
+        {
+
+            //Hiding sample button.
+            image4.setVisibility(View.VISIBLE);
+            image5.setVisibility(View.VISIBLE);
+            image6.setVisibility(View.VISIBLE);
+            image8.setVisibility(View.VISIBLE);
+            image9.setVisibility(View.VISIBLE);
+            image10.setVisibility(View.VISIBLE);
+
+
+        }
+
         if (record.equals("Clear All"))
 
         {
@@ -186,6 +213,15 @@ public class GroundFoorFunctions  extends AppCompatActivity  {
             PINKLINE2.setVisibility(View.INVISIBLE);
             PINKLINE3.setVisibility(View.INVISIBLE);
             PINKLINE4.setVisibility(View.INVISIBLE);
+
+
+
+            image4.setVisibility(View.INVISIBLE);
+            image5.setVisibility(View.INVISIBLE);
+            image6.setVisibility(View.INVISIBLE);
+            image8.setVisibility(View.INVISIBLE);
+            image9.setVisibility(View.INVISIBLE);
+            image10.setVisibility(View.INVISIBLE);
 
         }
 
