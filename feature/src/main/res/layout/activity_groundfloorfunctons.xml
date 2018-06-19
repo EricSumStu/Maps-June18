@@ -50,7 +50,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="44dp"
         android:text="TextView"
-        android:visibility="invisible"
+        android:visibility="visible"
 
         />
 
@@ -125,7 +125,7 @@
         android:layout_below="@+id/line1"
         android:layout_marginStart="-2dp"
         android:layout_marginTop="-216dp"
-        android:layout_toEndOf="@+id/QRScannerBtn"
+        android:layout_toEndOf="@+id/btn4"
         app:srcCompat="@mipmap/ic_launcher_foreground"
         android:visibility="invisible"/>
 

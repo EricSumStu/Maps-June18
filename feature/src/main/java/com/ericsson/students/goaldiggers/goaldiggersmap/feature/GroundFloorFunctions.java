@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class GroundFloorFunctions extends AppCompatActivity  {
 
@@ -128,9 +129,8 @@ public class GroundFloorFunctions extends AppCompatActivity  {
 
                     case 3:
 
-                        record = "Coffee";
-
-
+                        record = "Coffee Docks";
+                        break;
 
                     case 4:
 
@@ -161,17 +161,18 @@ public class GroundFloorFunctions extends AppCompatActivity  {
     {
 
 
-/*
+
         display_data.setTextSize(18);
         display_data.setText(record);
-*/
+
 
         if (record.equals("Athlone"))
 
         {
 
+
             //Hiding sample button.
-            PINKLINE.setVisibility(View.INVISIBLE);
+           PINKLINE.setVisibility(View.INVISIBLE);
 
             PINKLINE2.setVisibility(View.VISIBLE);
 
@@ -194,15 +195,16 @@ public class GroundFloorFunctions extends AppCompatActivity  {
 
             PINKLINE3.setVisibility(View.INVISIBLE);
             PINKLINE4.setVisibility(View.INVISIBLE);
-
         }
 
+        if (record.equals("Coffee Docks")){
 
-        if (record.equals("Coffee"))
+            PINKLINE.setVisibility(View.INVISIBLE);
+            PINKLINE2.setVisibility(View.INVISIBLE);
 
-        {
+            PINKLINE3.setVisibility(View.INVISIBLE);
+            PINKLINE4.setVisibility(View.INVISIBLE);
 
-            //Hiding sample button.
             image4.setVisibility(View.VISIBLE);
             image5.setVisibility(View.VISIBLE);
             image6.setVisibility(View.VISIBLE);
@@ -210,12 +212,15 @@ public class GroundFloorFunctions extends AppCompatActivity  {
             image9.setVisibility(View.VISIBLE);
             image10.setVisibility(View.VISIBLE);
 
+    }
 
-        }
+
+
 
         if (record.equals("Clear All"))
 
         {
+
 
             //Hiding sample button.
             PINKLINE.setVisibility(View.INVISIBLE);
@@ -237,53 +242,3 @@ public class GroundFloorFunctions extends AppCompatActivity  {
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-/*
-
- Button button1,button2;
-    View PINKLINE,PINKLINE2,PINKLINE3;
-
-
-
-
-    Button next = (Button) findViewById(R.id.button);
-        next.setOnClickListener(new View.OnClickListener() {
-public void onClick(View view) {
-        Intent myIntent = new Intent(view.getContext(), FirstFloorFunctions.class);
-        startActivityForResult(myIntent, 0);
-        }
-
-        });
-
-
-
-        PINKLINE = (View)findViewById(R.id.line1);
-        PINKLINE2 = (View)findViewById(R.id.line2);
-        PINKLINE3 = (View)findViewById(R.id.line3);
-
-
-        button2 = (Button)findViewById(R.id.AddPinkLine);
-        button2.setOnClickListener(new View.OnClickListener() {
-
-@Override
-public void onClick(View v) {
-        // TODO Auto-generated method stub
-
-        //Hiding sample button.
-        PINKLINE.setVisibility(View.VISIBLE);
-        PINKLINE2.setVisibility(View.VISIBLE);
-        PINKLINE3.setVisibility(View.VISIBLE);
-
-        }
-        });
-
-        */
