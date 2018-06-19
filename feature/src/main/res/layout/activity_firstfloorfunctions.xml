@@ -27,9 +27,9 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="21dp"
+        android:layout_marginBottom="35dp"
         android:text="Ground Floor"
         tools:layout_editor_absoluteX="291dp"
         tools:layout_editor_absoluteY="487dp" />
