@@ -2,11 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ericsson.students.goaldiggers.goaldiggersmap.feature">
 
+    <uses-permission android:name="android.permission.CAMERA" />
+
     <application>
         <activity
             android:name=".GroundFloorFunctions"
-            android:configChanges="orientation|screenSize|keyboardHidden"   >
-
+            android:configChanges="orientation|screenSize|keyboardHidden">
             <intent-filter android:order="1">
                 <action android:name="android.intent.action.VIEW" />
 
@@ -50,8 +51,20 @@
                     android:scheme="https" />
             </intent-filter>
         </activity>
-
         <activity android:name=".MainMenu">
+            <intent-filter android:order="1">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="example.com"
+                    android:pathPattern="/.*"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ScanActivity">
             <intent-filter android:order="1">
                 <action android:name="android.intent.action.VIEW" />
 
