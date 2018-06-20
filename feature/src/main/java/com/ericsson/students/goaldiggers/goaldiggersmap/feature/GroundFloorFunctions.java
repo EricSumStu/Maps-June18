@@ -12,6 +12,8 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.github.chrisbanes.photoview.PhotoView;
+
 public class GroundFloorFunctions extends AppCompatActivity  {
 
 // define spinner
@@ -44,8 +46,10 @@ public class GroundFloorFunctions extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_groundfloorfunctons);
-
         sp = (Spinner)findViewById(R.id.spinner);
+
+        PhotoView photoView = (PhotoView) findViewById(R.id.photo_view);
+        photoView.setImageResource(R.drawable.groundfloor);
 
 //        adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,names);
         adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,names);
