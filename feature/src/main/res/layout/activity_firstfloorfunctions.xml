@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginBottom="35dp"
+        android:layout_marginBottom="14dp"
         android:text="Ground Floor"
         tools:layout_editor_absoluteX="291dp"
         tools:layout_editor_absoluteY="487dp" />

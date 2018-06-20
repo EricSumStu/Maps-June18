@@ -27,7 +27,7 @@ public class GroundFloorFunctions extends AppCompatActivity  {
 
     //make string Arrary
 
-    String names[] = {"----Select----","Athlone","Lars Magnus","Coffee Docks","Clear All"};
+    String names[] = {"----Select----","Athlone","Lars Magnus","Coffee Docks","Toilets & Showers","Clear All"};
 
     //defins array adapter of string type
 
@@ -134,10 +134,15 @@ public class GroundFloorFunctions extends AppCompatActivity  {
 
                     case 4:
 
-                        record = "Clear All";
+                        record = "Toilets & Showers";
 
                         break;
 
+                    case 5:
+
+                        record = "Clear All";
+
+                        break;
                 }
 
                 diplsyResult(view);
@@ -197,11 +202,10 @@ public class GroundFloorFunctions extends AppCompatActivity  {
             PINKLINE4.setVisibility(View.INVISIBLE);
         }
 
-        if (record.equals("Coffee Docks")){
+        if (record.equals("Coffee Docks")) {
 
             PINKLINE.setVisibility(View.INVISIBLE);
             PINKLINE2.setVisibility(View.INVISIBLE);
-
             PINKLINE3.setVisibility(View.INVISIBLE);
             PINKLINE4.setVisibility(View.INVISIBLE);
 
@@ -212,9 +216,16 @@ public class GroundFloorFunctions extends AppCompatActivity  {
             image9.setVisibility(View.VISIBLE);
             image10.setVisibility(View.VISIBLE);
 
-    }
+        }
+
+        if (record.equals("Toilets & Showers")) {
+            PINKLINE.setVisibility(View.INVISIBLE);
+            PINKLINE2.setVisibility(View.INVISIBLE);
+            PINKLINE3.setVisibility(View.INVISIBLE);
+            PINKLINE4.setVisibility(View.INVISIBLE);
 
 
+        }
 
 
         if (record.equals("Clear All"))
