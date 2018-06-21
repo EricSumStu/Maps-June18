@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#545454"
+    android:background="#244451"
     tools:context=".GroundFloorFunctions">
 
     <Button
@@ -17,14 +17,15 @@
         android:layout_marginEnd="13dp"
         android:text="First Floor"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@android:color/background_light"
+        android:background="@drawable/mybuttonlarge"/>
 
 
     <Button
         android:id="@+id/btn4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/imageView8"
         android:layout_alignTop="@+id/button"
         android:text="Back"
         tools:ignore="MissingConstraints"
@@ -98,70 +99,9 @@
         android:background="@color/colorAccent"
         android:visibility="gone"/>
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="50dp"
-        android:layout_height="88dp"
-        android:layout_alignParentEnd="true"
-        android:layout_below="@+id/line1"
-        android:layout_marginEnd="101dp"
-        android:layout_marginTop="-216dp"
-        android:visibility="invisible"
-        app:srcCompat="@mipmap/ic_coffeemug_foreground" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="49dp"
-        android:layout_height="47dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="196dp"
-        android:layout_marginStart="119dp"
-        android:visibility="invisible"
-        app:srcCompat="@mipmap/ic_coffeemug_foreground" />
 
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="54dp"
-        android:layout_height="40dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginEnd="131dp"
-        android:layout_marginTop="247dp"
-        android:visibility="invisible"
-        app:srcCompat="@mipmap/ic_coffeemug_foreground" />
 
-
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="56dp"
-        android:layout_height="44dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="54dp"
-        android:layout_marginTop="157dp"
-        android:visibility="invisible"
-        app:srcCompat="@mipmap/ic_coffeemug_foreground" />
-
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="56dp"
-        android:layout_height="44dp"
-        android:layout_alignParentEnd="true"
-        android:layout_below="@+id/imageView6"
-        android:visibility="invisible"
-        app:srcCompat="@mipmap/ic_coffeemug_foreground" />
-
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="58dp"
-        android:layout_height="48dp"
-        android:layout_alignEnd="@+id/btn4"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="155dp"
-        android:visibility="invisible"
-        app:srcCompat="@mipmap/ic_coffeemug_foreground" />
 
     <Spinner
         android:id="@+id/spinner"
@@ -170,7 +110,8 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="11dp"
-        android:background="#D6D7D7"/>
+        android:background="#D6D7D7"
+        />
 
 
 </RelativeLayout>

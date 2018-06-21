@@ -10,7 +10,6 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.github.chrisbanes.photoview.PhotoView;
 
@@ -49,7 +48,7 @@ public class GroundFloorFunctions extends AppCompatActivity  {
         sp = (Spinner)findViewById(R.id.spinner);
 
         PhotoView photoView = (PhotoView) findViewById(R.id.photo_view);
-        photoView.setImageResource(R.drawable.groundfloor);
+        photoView.setImageResource(R.drawable.ecm);
 
 //        adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,names);
         adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,names);
@@ -89,12 +88,6 @@ public class GroundFloorFunctions extends AppCompatActivity  {
 
 
 
-        image4 = (ImageView)findViewById(R.id.imageView4);
-        image5 = (ImageView)findViewById(R.id.imageView5);
-        image6 = (ImageView)findViewById(R.id.imageView6);
-        image8 = (ImageView)findViewById(R.id.imageView8);
-        image9 = (ImageView)findViewById(R.id.imageView9);
-        image10 = (ImageView)findViewById(R.id.imageView10);
 
 
 
@@ -208,17 +201,15 @@ public class GroundFloorFunctions extends AppCompatActivity  {
 
         if (record.equals("Coffee Docks")) {
 
+            PhotoView photoView = (PhotoView) findViewById(R.id.photo_view);
+            photoView.setImageResource(R.drawable.coffeedocks);
+
             PINKLINE.setVisibility(View.INVISIBLE);
             PINKLINE2.setVisibility(View.INVISIBLE);
             PINKLINE3.setVisibility(View.INVISIBLE);
             PINKLINE4.setVisibility(View.INVISIBLE);
 
-            image4.setVisibility(View.VISIBLE);
-            image5.setVisibility(View.VISIBLE);
-            image6.setVisibility(View.VISIBLE);
-            image8.setVisibility(View.VISIBLE);
-            image9.setVisibility(View.VISIBLE);
-            image10.setVisibility(View.VISIBLE);
+
 
         }
 
@@ -228,6 +219,8 @@ public class GroundFloorFunctions extends AppCompatActivity  {
             PINKLINE3.setVisibility(View.INVISIBLE);
             PINKLINE4.setVisibility(View.INVISIBLE);
 
+            PhotoView photoView = (PhotoView) findViewById(R.id.photo_view);
+            photoView.setImageResource(R.drawable.toiletsmap);
 
         }
 
@@ -235,6 +228,8 @@ public class GroundFloorFunctions extends AppCompatActivity  {
         if (record.equals("Clear All"))
 
         {
+            PhotoView photoView = (PhotoView) findViewById(R.id.photo_view);
+            photoView.setImageResource(R.drawable.ecm);
 
 
             //Hiding sample button.
@@ -245,12 +240,6 @@ public class GroundFloorFunctions extends AppCompatActivity  {
 
 
 
-            image4.setVisibility(View.INVISIBLE);
-            image5.setVisibility(View.INVISIBLE);
-            image6.setVisibility(View.INVISIBLE);
-            image8.setVisibility(View.INVISIBLE);
-            image9.setVisibility(View.INVISIBLE);
-            image10.setVisibility(View.INVISIBLE);
 
         }
 
