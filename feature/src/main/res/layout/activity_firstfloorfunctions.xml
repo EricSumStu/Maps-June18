@@ -4,24 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#545454"
+    android:background="#1D414F"
     tools:context=".FirstFloorFunctions">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="318dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:adjustViewBounds="true"
-        android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/firstfloor" />
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/photo_view"
+        android:layout_width="match_parent"
+        android:layout_height="510dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
 
     <Button
         android:id="@+id/button2"
@@ -33,4 +25,16 @@
         android:text="Ground Floor"
         tools:layout_editor_absoluteX="291dp"
         tools:layout_editor_absoluteY="487dp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="11dp"
+        android:background="#D6D7D7"
+        />
+
+
 </RelativeLayout>

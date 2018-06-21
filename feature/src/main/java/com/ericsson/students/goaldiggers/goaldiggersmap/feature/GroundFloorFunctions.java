@@ -28,7 +28,7 @@ public class GroundFloorFunctions extends AppCompatActivity  {
 
     //make string Arrary
 
-    String names[] = {"----Select----","Athlone","Lars Magnus","Coffee Docks","Toilets & Showers","Clear All"};
+    String names[] = {"----Select----","Athlone","Lars Magnus","Coffee Docks","Toilets","Clear All"};
 
     //defins array adapter of string type
 
@@ -131,7 +131,7 @@ public class GroundFloorFunctions extends AppCompatActivity  {
 
                     case 4:
 
-                        record = "Toilets & Showers";
+                        record = "Toilets";
 
                         break;
 
@@ -213,7 +213,7 @@ public class GroundFloorFunctions extends AppCompatActivity  {
 
         }
 
-        if (record.equals("Toilets & Showers")) {
+        if (record.equals("Toilets")) {
             PINKLINE.setVisibility(View.INVISIBLE);
             PINKLINE2.setVisibility(View.INVISIBLE);
             PINKLINE3.setVisibility(View.INVISIBLE);
