@@ -1,14 +1,15 @@
 package com.ericsson.students.goaldiggers.goaldiggersmap.feature;
 
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
+
 import com.google.zxing.Result;
 
 import me.dm7.barcodescanner.zxing.ZXingScannerView;
 
-public class ScanActivity extends AppCompatActivity implements ZXingScannerView.ResultHandler{
+public class ScanActivity extends AppCompatActivity implements ZXingScannerView.ResultHandler {
 
     private ZXingScannerView mScannerView;
 
@@ -38,10 +39,30 @@ public class ScanActivity extends AppCompatActivity implements ZXingScannerView.
         // Log.v("tag", rawResult.getText()); // Prints scan results
         // Log.v("tag", rawResult.getBarcodeFormat().toString()); // Prints the scan format (qrcode, pdf417 etc.)
 
-        MainMenu.tvresult.setText(rawResult.getText());
-        onBackPressed();
+
+        //MainMenu.tvresult.setText(rawResult.getText());
+        //locatiovTV.setOnClickListener();
+
+        try {
+            final Intent intent = new Intent(ScanActivity.this, CurrentLocation.class);
+            intent.putExtra(Constants.SCAN_BAR_TEST_KEY, rawResult.getText());
+            startActivity(intent);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+
+
+
+
+
+
+
+        //onBackPressed();
 
         // If you would like to resume scanning, call this method below:
         //mScannerView.resumeCameraPreview(this);
     }
+
+
 }

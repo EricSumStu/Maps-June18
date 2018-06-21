@@ -9,7 +9,6 @@ import android.widget.TextView;
 
 public class MainMenu extends AppCompatActivity {
 
-    public static TextView tvresult;
     private  Button btn;
 
     @Override
@@ -26,7 +25,7 @@ public class MainMenu extends AppCompatActivity {
 
         });
 
-        tvresult = (TextView) findViewById(R.id.tvresult);
+        //tvresult = (TextView) findViewById(R.id.tvresult);
 
         btn = (Button) findViewById(R.id.btn_rqst);
 
