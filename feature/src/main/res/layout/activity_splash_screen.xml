@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="161dp"
+        android:layout_marginBottom="131dp"
         android:fontFamily="sans-serif"
         android:text="ATHLONE INTERNAL MAP"
         android:textColor="#002561"
