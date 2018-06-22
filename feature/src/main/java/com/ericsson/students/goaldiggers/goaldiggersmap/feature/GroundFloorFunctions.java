@@ -28,7 +28,7 @@ public class GroundFloorFunctions extends AppCompatActivity  {
 
     //make string Arrary
 
-    String names[] = {"----Select----","Athlone","Lars Magnus","Coffee Docks","Toilets","Clear All"};
+    String names[] = {"-----Select-----                                                               ↓","Athlone","Lars Magnus","Coffee Docks","Toilets","Clear All"};
 
     //defins array adapter of string type
 
