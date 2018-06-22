@@ -20,7 +20,7 @@ public class FirstFloorFunctions extends AppCompatActivity {
 
     //make string Arrary
 
-    String names[] = {"----Select----", "Coffee Docks", "Toilets", "Clear All"};
+    String names[] = {"-----Select-----                                                               ↓", "Coffee Docks", "Toilets", "Clear All"};
 
     //defins array adapter of string type
 
