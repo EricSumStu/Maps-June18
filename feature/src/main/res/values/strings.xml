@@ -1,3 +1,15 @@
 <resources>
     <string name="back">Back</string>
+    <string name="zone_1">Zone 1</string>
+    <string name="todo">TODO</string>
+    <string name="zone_3">Zone 3</string>
+    <string name="zone_2">Zone 2</string>
+    <string name="zone_4">Zone 4</string>
+    <string name="zone_5">Zone 5</string>
+    <string name="zone_6">Zone 6</string>
+    <string name="zone_7">Zone 7</string>
+    <string name="zone_8">Zone 8</string>
+    <string name="zone_9">Zone 9</string>
+    <string name="textview">TextView</string>
+    <string name="zones">Zones</string>
 </resources>

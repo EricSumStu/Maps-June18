@@ -9,15 +9,14 @@ import android.widget.TextView;
 
 public class MainMenu extends AppCompatActivity {
 
-    private  Button btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
 
-        Button btn1 = (Button) findViewById(R.id.btn31list);
-        btn1.setOnClickListener(new View.OnClickListener() {
+        Button btn = (Button) findViewById(R.id.btnMap);
+        btn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 Intent myIntent = new Intent(view.getContext(), GroundFloorFunctions.class);
                 startActivityForResult(myIntent, 0);
@@ -27,14 +26,24 @@ public class MainMenu extends AppCompatActivity {
 
         //tvresult = (TextView) findViewById(R.id.tvresult);
 
-        btn = (Button) findViewById(R.id.btn_rqst);
+        Button btn1 = (Button) findViewById(R.id.btnScan);
 
-        btn.setOnClickListener(new View.OnClickListener() {
+        btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainMenu.this, ScanActivity.class);
                 startActivity(intent);
             }
+        });
+
+
+        Button btn2 = (Button) findViewById(R.id.btnZones);
+        btn2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent myIntent = new Intent(view.getContext(), ZonesMenu.class);
+                startActivityForResult(myIntent, 0);
+            }
+
         });
     }
 }
