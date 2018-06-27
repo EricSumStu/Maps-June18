@@ -132,8 +132,8 @@ public class FirstFloorFunctions extends AppCompatActivity {
             PhotoView photoView = (PhotoView) findViewById(R.id.photo_view);
             photoView.setImageResource(R.drawable.ecmfirst);
 
-            }
+        }
 
     }
 
-    }
+}

@@ -11,6 +11,8 @@ import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.davemorrissey.labs.subscaleview.ImageSource;
+import com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView;
 import com.github.chrisbanes.photoview.PhotoView;
 
 public class GroundFloorFunctions extends AppCompatActivity  {
@@ -47,8 +49,8 @@ public class GroundFloorFunctions extends AppCompatActivity  {
         setContentView(R.layout.activity_groundfloorfunctons);
         sp = (Spinner)findViewById(R.id.spinner);
 
-        PhotoView photoView = (PhotoView) findViewById(R.id.photo_view);
-        photoView.setImageResource(R.drawable.ecm);
+        SubsamplingScaleImageView imageView = (SubsamplingScaleImageView)findViewById(R.id.imageView);
+        imageView.setImage(ImageSource.resource(R.drawable.ecm));
 
 //        adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,names);
         adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,names);
