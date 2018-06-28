@@ -23,20 +23,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="34dp"
-        android:layout_marginTop="140dp"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="138dp"
         android:background="@drawable/mybuttonsmall"
-        android:text="Zone 1"
-        android:textColor="@android:color/background_light" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/button1"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/mybuttonsmall"
-        android:text="Zone 2"
+        android:backgroundTint="#F70404"
+        android:text="@string/zone_1"
         android:textColor="@android:color/background_light" />
 
     <Button
@@ -45,52 +36,56 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignTop="@+id/button1"
-        android:layout_marginEnd="29dp"
+        android:layout_marginEnd="90dp"
         android:background="@drawable/mybuttonsmall"
-        android:text="Zone 3"
-        android:textColor="@android:color/background_light"/>
+        android:backgroundTint="#81E7D8"
+        android:text="@string/zone_3"
+        android:textColor="@android:color/background_light" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/button1"
-        android:layout_marginTop="245dp"
+        android:layout_alignStart="@+id/button7"
+        android:layout_centerVertical="true"
         android:background="@drawable/mybuttonsmall"
-        android:text="Zone 4"
-        android:textColor="@android:color/background_light"/>
+        android:backgroundTint="#3FF039"
+        android:text="@string/zone_4"
+        android:textColor="@android:color/background_light" />
 
     <Button
         android:id="@+id/button5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/button4"
-        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
         android:background="@drawable/mybuttonsmall"
-        android:text="Zone 5"
-        android:textColor="@android:color/background_light"/>
+        android:backgroundTint="#60E0CB"
+        android:text="@string/zone_5"
+        android:textColor="@android:color/background_light" />
 
     <Button
         android:id="@+id/button6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/button3"
-        android:layout_alignTop="@+id/button4"
+        android:layout_alignStart="@+id/button9"
+        android:layout_centerVertical="true"
         android:background="@drawable/mybuttonsmall"
-        android:text="Zone 6"
-        android:textColor="@android:color/background_light"/>
+        android:backgroundTint="#EBF139"
+        android:text="@string/zone_6"
+        android:textColor="@android:color/background_light" />
 
     <Button
         android:id="@+id/button7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/button1"
-        android:layout_marginBottom="164dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="135dp"
+        android:layout_marginStart="36dp"
         android:background="@drawable/mybuttonsmall"
-        android:text="Zone 7"
-        android:textColor="@android:color/background_light"/>
+        android:backgroundTint="#EE80C8"
+        android:text="@string/zone_7"
+        android:textColor="@android:color/background_light" />
 
     <Button
         android:id="@+id/button8"
@@ -99,16 +94,19 @@
         android:layout_alignTop="@+id/button7"
         android:layout_centerHorizontal="true"
         android:background="@drawable/mybuttonsmall"
-        android:text="Zone 8"
-        android:textColor="@android:color/background_light"/>
+        android:backgroundTint="#FC9E3F"
+        android:text="@string/zone_8"
+        android:textColor="@android:color/background_light" />
 
     <Button
         android:id="@+id/button9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/button3"
-        android:layout_alignTop="@+id/button7"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/button8"
+        android:layout_marginEnd="36dp"
         android:background="@drawable/mybuttonsmall"
-        android:text="Zone 9"
-        android:textColor="@android:color/background_light"/>
+        android:backgroundTint="#A8D5E1"
+        android:text="@string/zone_9"
+        android:textColor="@android:color/background_light" />
 </RelativeLayout>
