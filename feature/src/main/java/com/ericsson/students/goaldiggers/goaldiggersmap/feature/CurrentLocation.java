@@ -36,7 +36,19 @@ public class CurrentLocation extends AppCompatActivity {
 
 
 
-        Imagedisplay();
+        //Imagedisplay();
+
+
+
+        String stringPart = ((String) locationTV.getText()).substring(5);
+        stringPart = (stringPart).toLowerCase();
+
+        SubsamplingScaleImageView imageView = (SubsamplingScaleImageView) findViewById(R.id.imageView);
+
+
+        int id = getResources().getIdentifier(stringPart, "drawable", getPackageName());
+        Toast.makeText(this,stringPart, Toast.LENGTH_LONG).show();
+        imageView.setImage(ImageSource.resource(id));
 
 
 
@@ -80,6 +92,14 @@ public class CurrentLocation extends AppCompatActivity {
            imageView2.setImage(ImageSource.resource(R.drawable.groundfloor));
 
    */
+
+
+    }
+
+
+    public void DisplayToast() {
+
+        Toast.makeText(this,"ffhhhvh", Toast.LENGTH_LONG).show();
 
 
     }
