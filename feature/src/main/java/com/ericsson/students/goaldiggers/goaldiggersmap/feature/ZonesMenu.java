@@ -34,17 +34,6 @@ public class ZonesMenu extends AppCompatActivity {
 
         });
 
-        Button btn2 = (Button) findViewById(R.id.button2);
-        btn2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent myIntent = new Intent(view.getContext(), ActivityZone2.class);
-                startActivityForResult(myIntent, 0);
-
-            }
-
-        });
-
         Button btn3 = (Button) findViewById(R.id.button3);
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
