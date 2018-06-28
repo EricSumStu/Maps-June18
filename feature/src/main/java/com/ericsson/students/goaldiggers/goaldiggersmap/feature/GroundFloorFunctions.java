@@ -78,15 +78,6 @@ public class GroundFloorFunctions extends AppCompatActivity  {
         });
 
 
-
-
-
-
-
-
-
-
-
         //set spinner method
 
         sp.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
