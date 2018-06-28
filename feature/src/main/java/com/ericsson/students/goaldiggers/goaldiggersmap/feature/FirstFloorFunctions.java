@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.davemorrissey.labs.subscaleview.ImageSource;
+import com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView;
 import com.github.chrisbanes.photoview.PhotoView;
 
 public class FirstFloorFunctions extends AppCompatActivity {
@@ -20,7 +22,7 @@ public class FirstFloorFunctions extends AppCompatActivity {
 
     //make string Arrary
 
-    String names[] = {"-----Select-----                                                               ↓", "Coffee Docks", "Toilets", "Clear All"};
+    String names[] = {"-----Select-----", "Coffee Docks", "Toilets", "Clear All"};
 
     //defins array adapter of string type
 
@@ -37,8 +39,8 @@ public class FirstFloorFunctions extends AppCompatActivity {
         setContentView(R.layout.activity_firstfloorfunctions);
         sp = (Spinner) findViewById(R.id.spinner);
 
-        PhotoView photoView = (PhotoView) findViewById(R.id.photo_view);
-        photoView.setImageResource(R.drawable.ecmfirst);
+        SubsamplingScaleImageView imageView = (SubsamplingScaleImageView)findViewById(R.id.imageView);
+        imageView.setImage(ImageSource.resource(R.drawable.berlin_tokyo));
 
 //        adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,names);
         adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, names);
@@ -119,18 +121,15 @@ public class FirstFloorFunctions extends AppCompatActivity {
 
 
         if (record.equals("Coffee Docks")) {
-            PhotoView photoView = (PhotoView) findViewById(R.id.photo_view);
-            photoView.setImageResource(R.drawable.ecmfirstcoffee);
+
         }
 
         if (record.equals("Toilets")) {
-            PhotoView photoView = (PhotoView) findViewById(R.id.photo_view);
-            photoView.setImageResource(R.drawable.ecmfirsttoilets);
+
         }
 
         if (record.equals("Clear All")) {
-            PhotoView photoView = (PhotoView) findViewById(R.id.photo_view);
-            photoView.setImageResource(R.drawable.ecmfirst);
+
 
         }
 

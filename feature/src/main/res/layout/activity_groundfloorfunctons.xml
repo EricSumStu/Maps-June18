@@ -15,10 +15,10 @@
         android:layout_alignParentEnd="true"
         android:layout_marginBottom="17dp"
         android:layout_marginEnd="13dp"
-        android:text="First Floor"
+        android:text="FIRST FLOOR"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        />
+        tools:ignore="HardcodedText" />
 
 
     <Button
@@ -26,8 +26,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/button"
-        android:text="Back"
-        tools:ignore="MissingConstraints"
+        android:text="BACK"
+        tools:ignore="HardcodedText,MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="515dp" />
 
@@ -40,66 +40,17 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="44dp"
-        android:text="TextView"
+        android:text="@string/textview"
         android:visibility="gone"
 
         />
 
-
-    <com.github.chrisbanes.photoview.PhotoView
-        android:id="@+id/photo_view"
+    <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true" />
-
-    <View
-        android:id="@+id/line1"
-        android:layout_width="2dp"
-        android:layout_height="73dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="216dp"
-        android:layout_marginStart="72dp"
-        android:background="@color/colorAccent"
-        android:visibility="invisible"/>
-
-    <View
-        android:id="@+id/line2"
-        android:layout_width="2dp"
-        android:layout_height="32dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/line1"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="241dp"
-        android:background="@color/colorAccent"
-        android:visibility="gone"/>
-
-    <View
-        android:id="@+id/line3"
-        android:layout_width="3dp"
-        android:layout_height="33dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="97dp"
-        android:layout_marginTop="259dp"
-        android:background="@color/colorAccent"
-        android:rotation="90"
-        android:visibility="gone"/>
-
-    <View
-        android:id="@+id/line4"
-        android:layout_width="3dp"
-        android:layout_height="27dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignTop="@+id/line2"
-        android:layout_marginStart="113dp"
-        android:layout_marginTop="8dp"
-        android:background="@color/colorAccent"
-        android:visibility="gone"/>
-
-
-
 
 
     <Spinner

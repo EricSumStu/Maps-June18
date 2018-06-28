@@ -21,16 +21,13 @@ public class GroundFloorFunctions extends AppCompatActivity  {
 
     Spinner sp ;
 
-    View PINKLINE,PINKLINE2,PINKLINE3,PINKLINE4,PINKLINE5;
-    View image4,image5,image6,image8,image9,image10;
-
     //DEFINE TEXT VIEW
 
     TextView display_data ;
 
     //make string Arrary
 
-    String names[] = {"-----Select-----                                                               ↓","Athlone","Lars Magnus","Coffee Docks","Toilets","Clear All"};
+    String names[] = {"-----Select-----","Coffee Docks","Toilets","Clear All"};
 
     //defins array adapter of string type
 
@@ -50,7 +47,7 @@ public class GroundFloorFunctions extends AppCompatActivity  {
         sp = (Spinner)findViewById(R.id.spinner);
 
         SubsamplingScaleImageView imageView = (SubsamplingScaleImageView)findViewById(R.id.imageView);
-        imageView.setImage(ImageSource.resource(R.drawable.ecm));
+        imageView.setImage(ImageSource.resource(R.drawable.larsmagnus_nuuk));
 
 //        adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,names);
         adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,names);
@@ -82,10 +79,6 @@ public class GroundFloorFunctions extends AppCompatActivity  {
 
 
 
-        PINKLINE = (View)findViewById(R.id.line1);
-        PINKLINE2 = (View)findViewById(R.id.line2);
-        PINKLINE3 = (View)findViewById(R.id.line3);
-        PINKLINE4 = (View)findViewById(R.id.line4);
 
 
 
@@ -116,28 +109,16 @@ public class GroundFloorFunctions extends AppCompatActivity  {
 
                     case 1:
 
-                        record = "Athlone";
-
-                        break;
-
-                    case 2:
-
-                        record = "Lars Magnus";
-
-                        break;
-
-                    case 3:
-
                         record = "Coffee Docks";
                         break;
 
-                    case 4:
+                    case 2:
 
                         record = "Toilets";
 
                         break;
 
-                    case 5:
+                    case 3:
 
                         record = "Clear All";
 
@@ -164,65 +145,23 @@ public class GroundFloorFunctions extends AppCompatActivity  {
 
     {
 
-
-
         display_data.setTextSize(18);
         display_data.setText(record);
 
 
-        if (record.equals("Athlone"))
-
-        {
-
-
-            //Hiding sample button.
-           PINKLINE.setVisibility(View.INVISIBLE);
-
-            PINKLINE2.setVisibility(View.VISIBLE);
-
-
-            PINKLINE3.setVisibility(View.VISIBLE);
-            PINKLINE4.setVisibility(View.VISIBLE);
-
-    }
-
-
-
-
-        if (record.equals("Lars Magnus"))
-
-        {
-
-            //Hiding sample button.
-            PINKLINE.setVisibility(View.VISIBLE);
-            PINKLINE2.setVisibility(View.VISIBLE);
-
-            PINKLINE3.setVisibility(View.INVISIBLE);
-            PINKLINE4.setVisibility(View.INVISIBLE);
-        }
-
         if (record.equals("Coffee Docks")) {
 
-            PhotoView photoView = (PhotoView) findViewById(R.id.photo_view);
-            photoView.setImageResource(R.drawable.coffeedocks);
 
-            PINKLINE.setVisibility(View.INVISIBLE);
-            PINKLINE2.setVisibility(View.INVISIBLE);
-            PINKLINE3.setVisibility(View.INVISIBLE);
-            PINKLINE4.setVisibility(View.INVISIBLE);
+
 
 
 
         }
 
         if (record.equals("Toilets")) {
-            PINKLINE.setVisibility(View.INVISIBLE);
-            PINKLINE2.setVisibility(View.INVISIBLE);
-            PINKLINE3.setVisibility(View.INVISIBLE);
-            PINKLINE4.setVisibility(View.INVISIBLE);
 
-            PhotoView photoView = (PhotoView) findViewById(R.id.photo_view);
-            photoView.setImageResource(R.drawable.toiletsmap);
+
+
 
         }
 
@@ -230,17 +169,6 @@ public class GroundFloorFunctions extends AppCompatActivity  {
         if (record.equals("Clear All"))
 
         {
-            PhotoView photoView = (PhotoView) findViewById(R.id.photo_view);
-            photoView.setImageResource(R.drawable.ecm);
-
-
-            //Hiding sample button.
-            PINKLINE.setVisibility(View.INVISIBLE);
-            PINKLINE2.setVisibility(View.INVISIBLE);
-            PINKLINE3.setVisibility(View.INVISIBLE);
-            PINKLINE4.setVisibility(View.INVISIBLE);
-
-
 
 
         }
