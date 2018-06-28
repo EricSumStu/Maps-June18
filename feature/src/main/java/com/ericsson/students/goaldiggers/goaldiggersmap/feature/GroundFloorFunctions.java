@@ -52,6 +52,7 @@ public class GroundFloorFunctions extends AppCompatActivity  {
 //        adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,names);
         adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,names);
 
+
         display_data = (TextView)findViewById(R.id.textView);
 
         //set adapter to spinner
