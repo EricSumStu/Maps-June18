@@ -1,7 +1,10 @@
 package com.ericsson.students.goaldiggers.goaldiggersmap.feature;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import com.davemorrissey.labs.subscaleview.ImageSource;
 import com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView;
@@ -14,6 +17,21 @@ public class ActivityZone4 extends AppCompatActivity {
         setContentView(R.layout.activity_zone4);
 
         SubsamplingScaleImageView imageView = (SubsamplingScaleImageView)findViewById(R.id.imageView);
-        //imageView.setImage(ImageSource.resource(R.drawable.zonefour));
+        imageView.setImage(ImageSource.resource(R.drawable.zonefour));
+
+        Button button17 = (Button) findViewById(R.id.button17);
+        button17.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent myIntent = new Intent(view.getContext(), ZonesMenu.class);
+                startActivityForResult(myIntent, 0);
+            }
+        });
+        Button button18 = (Button) findViewById(R.id.button18);
+        button18.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent myIntent = new Intent(view.getContext(), MainMenu.class);
+                startActivityForResult(myIntent, 0);
+            }
+        });
     }
 }

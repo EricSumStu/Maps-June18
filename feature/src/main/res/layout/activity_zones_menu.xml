@@ -72,7 +72,7 @@
         android:layout_alignStart="@+id/button9"
         android:layout_centerVertical="true"
         android:background="@drawable/mybuttonsmall"
-        android:backgroundTint="#EBF139"
+        android:backgroundTint="#FFE900"
         android:text="@string/zone_6"
         android:textColor="@android:color/background_light" />
 
@@ -111,4 +111,13 @@
         android:backgroundTint="#A8D5E1"
         android:text="@string/zone_9"
         android:textColor="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/button29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/button4"
+        android:layout_marginBottom="17dp"
+        android:text="Main Menu" />
 </RelativeLayout>
