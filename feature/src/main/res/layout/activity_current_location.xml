@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".CurrentLocation"
     android:screenOrientation="portrait"
-    android:background="#244451"
+    android:background="#244552"
     >
 
     <TextView
