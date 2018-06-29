@@ -19,7 +19,7 @@ public class CurrentLocation extends AppCompatActivity {
 //    SPINNER:
     Spinner sp ;
     TextView display_data ;
-    String names[] = {"-----Select-----","Anchorage","Berlin","Brasilia","Buenos Aires","Canberra","Cape Town","Demo Room","Helsinki","Honolulu","Jakarta","Kiev","Kuala Lumpur","Lars Magnus","Moscow","Nuuk","Ottowa","Paris,","Reykjavik","Rome","Stockholm","Tokyo","Warsaw","Washington DC","Wellington"};
+    String names[] = {"-----Select-----","Anchorage","Berlin","Brasilia","Buenos Aires","Canberra","Cape Town","Demo Room","Helsinki","Honolulu","Jakarta","Kiev","Kuala Lumpur","Lars Magnus","Moscow","Nuuk","Ottowa","Paris","Reykjavik","Rome","Stockholm","Tokyo","Warsaw","Washington DC","Wellington"};
     ArrayAdapter <String> adapter;
     //define string variable for record
     String record= "";
@@ -55,7 +55,8 @@ public class CurrentLocation extends AppCompatActivity {
         sp = (Spinner)findViewById(R.id.spinner);
         adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,names);
         sp.setAdapter(adapter);
-        //Imagedisplay();
+
+        Toast.makeText(this, "Please select a desination from the drop down menu above", Toast.LENGTH_LONG).show();
 
 
 
@@ -67,10 +68,6 @@ public class CurrentLocation extends AppCompatActivity {
         int resource_id = getResources().getIdentifier(currentLocationName, "drawable", getPackageName());
         imageView.setImage(ImageSource.resource(resource_id));
 
-
-//        int id = getResources().getIdentifier(currentLocationName, "drawable", getPackageName());
-//        Toast.makeText(this,currentLocationName, Toast.LENGTH_LONG).show();
-//        imageView.setImage(ImageSource.resource(id));
 
         sp.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
@@ -282,7 +279,7 @@ public class CurrentLocation extends AppCompatActivity {
         return ERROR_MESSAGE;
     }
 
-
+/*
     public void Imagedisplay() {
 
         //        This will turn "5.06 Berlin" to "berlin"
@@ -299,18 +296,8 @@ public class CurrentLocation extends AppCompatActivity {
 
 
 
-
-/*
-
-           //Toast.makeText(this, locationTV.getText(), Toast.LENGTH_SHORT).show();
-           SubsamplingScaleImageView imageView2 = (SubsamplingScaleImageView) findViewById(R.id.imageView);
-           imageView2.setImage(ImageSource.resource(R.drawable.groundfloor));
-
-   */
-
-
     }
-
+*/
 
     public void DisplayToast() {
 

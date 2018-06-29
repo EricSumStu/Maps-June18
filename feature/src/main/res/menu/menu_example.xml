@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/mail"
+
+        android:title="##### Zone 1 #####" />
+
+    <item android:id="@+id/upload9"
+
+        android:title="Lars Magnus"
+        />
+
+    <item android:id="@+id/share"
+
+        android:title="Reykjavik" />
+
+    <item android:id="@+id/mail2"
+
+        android:title="Nuuk" />
+
+    <item android:id="@+id/upload"
+
+        android:title="##### Zone 3 #####"
+        />
+
+    <item android:id="@+id/share3"
+
+        android:title="Paris" />
+
+    <item android:id="@+id/share99"
+
+        android:title="Athlone" />
+
+    <item android:id="@+id/mail4"
+
+        android:title="##### Zone 4 #####" />
+
+    <item android:id="@+id/upload5"
+
+        android:title="Demo Room"
+        />
+
+    <item android:id="@+id/share6"
+
+        android:title="Kuala Lumpur" />
+
+    <item android:id="@+id/mail7"
+
+        android:title="##### Zone 5 #####" />
+
+    <item android:id="@+id/upload8"
+
+        android:title="Stockholm"
+        />
+
+    <item android:id="@+id/share9"
+
+        android:title="Berlin" />
+
+    <item android:id="@+id/share10"
+
+        android:title="Helsinki" />
+
+    <item android:id="@+id/share11"
+
+        android:title="Rome" />
+
+
+    <item android:id="@+id/mail13"
+
+        android:title="##### Zone 6 #####" />
+
+    <item android:id="@+id/upload14"
+
+        android:title="Wellington"
+        />
+
+    <item android:id="@+id/share15"
+
+        android:title="Canberra" />
+
+    <item android:id="@+id/share16"
+
+        android:title="Tokyo" />
+
+    <item android:id="@+id/share17"
+
+        android:title="Warsaw" />
+
+    <item android:id="@+id/share18"
+
+        android:title="Kiev" />
+    <item android:id="@+id/share19"
+
+        android:title="Moscow" />
+
+
+    <item android:id="@+id/mail20"
+
+        android:title="##### Zone 7 #####" />
+
+    <item android:id="@+id/upload21"
+
+        android:title="Cape Town"
+        />
+
+    <item android:id="@+id/share29"
+
+        android:title="Jakarta" />
+
+    <item android:id="@+id/mail30"
+
+        android:title="##### Zone 8 #####" />
+
+    <item android:id="@+id/upload31"
+
+        android:title="Honolulu"
+        />
+
+    <item android:id="@+id/share33"
+
+        android:title="Ottowa" />
+
+    <item android:id="@+id/share34"
+
+        android:title="Anchorage" />
+
+
+    <item android:id="@+id/mail39"
+
+        android:title="##### Zone 9 #####" />
+
+    <item android:id="@+id/upload36"
+
+        android:title="Buenos Aires"
+        />
+
+    <item android:id="@+id/share37"
+
+        android:title="Brasilia" />
+
+    <item android:id="@+id/share38"
+
+        android:title="Washington DC" />
+
+    <item android:id="@+id/share40"
+
+        android:title="V.A. Lab" />
+
+
+
+
+</menu>
