@@ -14,6 +14,6 @@ public class ActivityZone6 extends AppCompatActivity {
         setContentView(R.layout.activity_zone6);
 
         SubsamplingScaleImageView imageView = (SubsamplingScaleImageView)findViewById(R.id.imageView);
-        imageView.setImage(ImageSource.resource(R.drawable.zonesix));
+        //imageView.setImage(ImageSource.resource(R.drawable.zonesix));
     }
 }

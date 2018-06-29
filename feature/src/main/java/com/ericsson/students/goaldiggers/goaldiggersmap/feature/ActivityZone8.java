@@ -14,6 +14,6 @@ public class ActivityZone8 extends AppCompatActivity {
         setContentView(R.layout.activity_zone8);
 
         SubsamplingScaleImageView imageView = (SubsamplingScaleImageView)findViewById(R.id.imageView);
-        imageView.setImage(ImageSource.resource(R.drawable.zoneeight));
+        //imageView.setImage(ImageSource.resource(R.drawable.zoneeight));
     }
 }

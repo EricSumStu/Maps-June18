@@ -18,7 +18,7 @@ public class CurrentLocation extends AppCompatActivity {
 //    SPINNER:
     Spinner sp ;
     TextView display_data ;
-    String names[] = {"-----Select-----","tokyo","helsinki","kiev"};
+    String names[] = {"-----Select-----","Anchorage","Berlin","Brasilia","Buenos Aires","Canberra","Cape Town","Demo Room","Helsinki","Honolulu","Jakarta","Kiev","Kuala Lumpur","Lars Magnus","Moscow","Nuuk","Ottowa","Paris,","Reykjavik","Rome","Stockholm","Tokyo","Warsaw","Washington DC","Wellington"};
     ArrayAdapter <String> adapter;
     //define string variable for record
     String record= "";
@@ -73,21 +73,152 @@ public class CurrentLocation extends AppCompatActivity {
 
                     case 1:
 
-                        record = "tokyo";
+                        record = "anchorage";
                         diplsyResult(view);
                         break;
 
                     case 2:
 
-                        record = "helsinki";
+                        record = "berlin";
                         diplsyResult(view);
                         break;
 
                     case 3:
 
+                        record = "brasilia";
+                        diplsyResult(view);
+                        break;
+
+                    case 4:
+
+                        record = "buenosaires";
+                        diplsyResult(view);
+                        break;
+
+                    case 5:
+
+                        record = "canberra";
+                        diplsyResult(view);
+                        break;
+
+                    case 6:
+
+                        record = "capetown";
+                        diplsyResult(view);
+                        break;
+
+                    case 7:
+
+                        record = "demoroom";
+                        diplsyResult(view);
+                        break;
+
+
+                    case 8:
+
+                        record = "helsinki";
+                        diplsyResult(view);
+                        break;
+
+                    case 9:
+
+                        record = "honolulu";
+                        diplsyResult(view);
+                        break;
+
+                    case 10:
+
+                    record = "jakarta";
+                    diplsyResult(view);
+                    break;
+
+                    case 11:
+
                         record = "kiev";
                         diplsyResult(view);
                         break;
+
+                    case 12:
+
+                        record = "kualalumpur";
+                        diplsyResult(view);
+                        break;
+
+                    case 13:
+
+                        record = "larsmagnus";
+                        diplsyResult(view);
+                        break;
+
+                    case 14:
+
+                        record = "moscow";
+                        diplsyResult(view);
+                        break;
+
+                    case 15:
+
+                        record = "nuuk";
+                        diplsyResult(view);
+                        break;
+
+                    case 16:
+
+                        record = "ottowa";
+                        diplsyResult(view);
+                        break;
+
+                    case 17:
+
+                        record = "paris";
+                        diplsyResult(view);
+                        break;
+
+                    case 18:
+
+                        record = "reykjavik";
+                        diplsyResult(view);
+                        break;
+
+                    case 19:
+
+                        record = "rome";
+                        diplsyResult(view);
+                        break;
+
+                    case 20:
+
+                        record = "stockholm";
+                        diplsyResult(view);
+                        break;
+
+
+                    case 21:
+
+                        record = "tokyo";
+                        diplsyResult(view);
+                        break;
+
+                    case 22:
+
+                        record = "warsaw";
+                        diplsyResult(view);
+                        break;
+
+
+                    case 23:
+
+                        record = "washingtondc";
+                        diplsyResult(view);
+                        break;
+
+
+                    case 24:
+
+                        record = "wellington";
+                        diplsyResult(view);
+                        break;
+
                 }
 
 

@@ -14,6 +14,6 @@ public class ActivityZone3 extends AppCompatActivity {
         setContentView(R.layout.activity_zone3);
 
         SubsamplingScaleImageView imageView = (SubsamplingScaleImageView)findViewById(R.id.imageView);
-        imageView.setImage(ImageSource.resource(R.drawable.zonethree));
+        //imageView.setImage(ImageSource.resource(R.drawable.zonethree));
     }
 }

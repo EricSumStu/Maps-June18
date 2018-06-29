@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.ericsson.students.goaldiggers.goaldiggersmap.feature">
+    package="com.ericsson.students.goaldiggers.goaldiggersmap.feature"
+    android:screenOrientation="portrait">
 
     <uses-permission android:name="android.permission.CAMERA" />
 
     <application>
         <activity
             android:name=".GroundFloorFunctions"
+            android:screenOrientation="portrait"
             android:configChanges="orientation|screenSize|keyboardHidden">
             <intent-filter android:order="1">
                 <action android:name="android.intent.action.VIEW" />
@@ -20,7 +22,9 @@
                     android:scheme="https" />
             </intent-filter>
         </activity>
-        <activity android:name=".SplashScreen">
+        <activity android:name=".SplashScreen"
+            android:screenOrientation="portrait"
+            >
             <intent-filter android:order="1">
                 <action android:name="android.intent.action.VIEW" />
 
@@ -38,7 +42,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".FirstFloorFunctions">
+        <activity android:name=".FirstFloorFunctions" android:screenOrientation="portrait">
             <intent-filter android:order="1">
                 <action android:name="android.intent.action.VIEW" />
 
@@ -51,7 +55,7 @@
                     android:scheme="https" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainMenu">
+        <activity android:name=".MainMenu"   android:screenOrientation="portrait">
             <intent-filter android:order="1">
                 <action android:name="android.intent.action.VIEW" />
 
@@ -64,7 +68,7 @@
                     android:scheme="https" />
             </intent-filter>
         </activity>
-        <activity android:name=".ScanActivity">
+        <activity android:name=".ScanActivity"  android:screenOrientation="portrait">
             <intent-filter android:order="1">
                 <action android:name="android.intent.action.VIEW" />
 
@@ -77,7 +81,7 @@
                     android:scheme="https" />
             </intent-filter>
         </activity>
-        <activity android:name=".CurrentLocation">
+        <activity android:name=".CurrentLocation"   android:screenOrientation="portrait">
             <intent-filter android:order="1">
                 <action android:name="android.intent.action.VIEW" />
 
@@ -90,7 +94,7 @@
                     android:scheme="https" />
             </intent-filter>
         </activity>
-        <activity android:name=".ZonesMenu">
+        <activity android:name=".ZonesMenu"  android:screenOrientation="portrait">
             <intent-filter android:order="1">
                 <action android:name="android.intent.action.VIEW" />
 
@@ -103,7 +107,7 @@
                     android:scheme="https" />
             </intent-filter>
         </activity>
-        <activity android:name=".ActivityZone1">
+        <activity android:name=".ActivityZone1"  android:screenOrientation="portrait">
             <intent-filter android:order="1">
                 <action android:name="android.intent.action.VIEW" />
 
@@ -116,7 +120,7 @@
                     android:scheme="https" />
             </intent-filter>
         </activity>
-        <activity android:name=".ActivityZone2">
+        <activity android:name=".ActivityZone2"  android:screenOrientation="portrait">
             <intent-filter android:order="1">
                 <action android:name="android.intent.action.VIEW" />
 
@@ -129,7 +133,7 @@
                     android:scheme="https" />
             </intent-filter>
         </activity>
-        <activity android:name=".ActivityZone3">
+        <activity android:name=".ActivityZone3" android:screenOrientation="portrait">
             <intent-filter android:order="1">
                 <action android:name="android.intent.action.VIEW" />
 
@@ -142,7 +146,7 @@
                     android:scheme="https" />
             </intent-filter>
         </activity>
-        <activity android:name=".ActivityZone4">
+        <activity android:name=".ActivityZone4" android:screenOrientation="portrait">
             <intent-filter android:order="1">
                 <action android:name="android.intent.action.VIEW" />
 
@@ -155,7 +159,7 @@
                     android:scheme="https" />
             </intent-filter>
         </activity>
-        <activity android:name=".ActivityZone5">
+        <activity android:name=".ActivityZone5" android:screenOrientation="portrait">
             <intent-filter android:order="1">
                 <action android:name="android.intent.action.VIEW" />
 
@@ -168,7 +172,7 @@
                     android:scheme="https" />
             </intent-filter>
         </activity>
-        <activity android:name=".ActivityZone6">
+        <activity android:name=".ActivityZone6"  android:screenOrientation="portrait">
             <intent-filter android:order="1">
                 <action android:name="android.intent.action.VIEW" />
 
@@ -181,7 +185,7 @@
                     android:scheme="https" />
             </intent-filter>
         </activity>
-        <activity android:name=".ActivityZone7">
+        <activity android:name=".ActivityZone7" android:screenOrientation="portrait">
             <intent-filter android:order="1">
                 <action android:name="android.intent.action.VIEW" />
 
@@ -194,7 +198,7 @@
                     android:scheme="https" />
             </intent-filter>
         </activity>
-        <activity android:name=".ActivityZone8">
+        <activity android:name=".ActivityZone8" android:screenOrientation="portrait">
             <intent-filter android:order="1">
                 <action android:name="android.intent.action.VIEW" />
 
@@ -207,7 +211,7 @@
                     android:scheme="https" />
             </intent-filter>
         </activity>
-        <activity android:name=".ActivityZone9">
+        <activity android:name=".ActivityZone9" android:screenOrientation="portrait">
             <intent-filter android:order="1">
                 <action android:name="android.intent.action.VIEW" />
 

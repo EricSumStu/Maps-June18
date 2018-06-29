@@ -14,6 +14,6 @@ public class ActivityZone4 extends AppCompatActivity {
         setContentView(R.layout.activity_zone4);
 
         SubsamplingScaleImageView imageView = (SubsamplingScaleImageView)findViewById(R.id.imageView);
-        imageView.setImage(ImageSource.resource(R.drawable.zonefour));
+        //imageView.setImage(ImageSource.resource(R.drawable.zonefour));
     }
 }
