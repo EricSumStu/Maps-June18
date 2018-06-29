@@ -16,7 +16,8 @@
         android:layout_marginTop="38dp"
         android:text="@string/zones"
         android:textAlignment="center"
-        android:textSize="30sp" />
+        android:textSize="30sp"
+        android:onClick="showPopup"/>
 
     <Button
         android:id="@+id/button1"

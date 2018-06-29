@@ -3,11 +3,13 @@ package com.ericsson.students.goaldiggers.goaldiggersmap.feature;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuInflater;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.PopupMenu;
 import android.widget.Toast;
 
 import java.security.AccessController;
@@ -22,6 +24,9 @@ public class ZonesMenu extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_zones_menu);
+
+
+        Toast.makeText(this,"Press Zones above for zone info", Toast.LENGTH_LONG).show();
 
         Button btn1 = (Button) findViewById(R.id.button1);
         btn1.setOnClickListener(new View.OnClickListener() {
@@ -111,5 +116,12 @@ public class ZonesMenu extends AppCompatActivity {
 
         });
 
+    }
+
+    public void showPopup(View v) {
+        PopupMenu popup = new PopupMenu(this, v);
+        MenuInflater inflater = popup.getMenuInflater();
+        inflater.inflate(R.menu.menu_example, popup.getMenu());
+        popup.show();
     }
 }
