@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -30,6 +31,24 @@ public class CurrentLocation extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_current_location);
+
+        Button btn10 = (Button) findViewById(R.id.button10);
+        btn10.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent myIntent = new Intent(view.getContext(), ScanActivity.class);
+                startActivityForResult(myIntent, 0);
+            }
+
+        });
+
+        Button btn11 = (Button) findViewById(R.id.button11);
+        btn11.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent myIntent = new Intent(view.getContext(), MainMenu.class);
+                startActivityForResult(myIntent, 0);
+            }
+
+        });
 
         locationTV = (TextView) findViewById(R.id.locationTV);
         locationTV.setText(getValue(getIntent()));
