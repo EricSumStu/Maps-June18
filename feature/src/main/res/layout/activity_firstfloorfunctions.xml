@@ -11,21 +11,22 @@
 
     <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
         android:id="@+id/imageView"
-        android:layout_width="329dp"
-        android:layout_height="421dp"
-        android:layout_centerInParent="true" />
+        android:layout_width="match_parent"
+        android:layout_height="441dp"
+        android:layout_above="@+id/button2"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginBottom="14dp"
+        android:layout_alignTop="@+id/button12"
+        android:layout_marginEnd="21dp"
         android:text="GROUND FLOOR"
+        tools:ignore="HardcodedText"
         tools:layout_editor_absoluteX="291dp"
-        tools:layout_editor_absoluteY="487dp"
-        tools:ignore="HardcodedText"/>
+        tools:layout_editor_absoluteY="487dp" />
 
     <Spinner
         android:id="@+id/spinner"
@@ -35,6 +36,17 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="25dp"
         android:background="#D6D7D7" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="13dp"
+        android:layout_marginStart="23dp"
+        android:text="Main Menu" />
 
 
 </RelativeLayout>

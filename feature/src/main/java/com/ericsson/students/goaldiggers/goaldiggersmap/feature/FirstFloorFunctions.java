@@ -59,6 +59,16 @@ public class FirstFloorFunctions extends AppCompatActivity {
 
         });
 
+        Button button12 = (Button) findViewById(R.id.button12);
+        button12.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent myIntent = new Intent(view.getContext(), MainMenu.class);
+                startActivityForResult(myIntent, 0);
+            }
+
+        });
+
+
 
         //set spinner method
 
