@@ -265,7 +265,7 @@ public class CurrentLocation extends AppCompatActivity {
         int resource_id = getResources().getIdentifier(imageNameStr, "drawable", getPackageName());
         imageView.setImage(ImageSource.resource(resource_id));
 //                        Toast.makeText(this,currentLocationName, Toast.LENGTH_LONG).show();
-
+         imageNameStr = currentLocationName;
 
 
     }
