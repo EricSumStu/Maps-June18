@@ -47,7 +47,7 @@ public class GroundFloorFunctions extends AppCompatActivity  {
         sp = (Spinner)findViewById(R.id.spinner);
 
         SubsamplingScaleImageView imageView = (SubsamplingScaleImageView)findViewById(R.id.imageView);
-        imageView.setImage(ImageSource.resource(R.drawable.larsmagnus_nuuk));
+        imageView.setImage(ImageSource.resource(R.drawable.ecm));
 
 //        adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,names);
         adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,names);
@@ -143,16 +143,14 @@ public class GroundFloorFunctions extends AppCompatActivity  {
 
         if (record.equals("Coffee Docks")) {
 
-
-
-
-
-
+            SubsamplingScaleImageView imageView = (SubsamplingScaleImageView)findViewById(R.id.imageView);
+            imageView.setImage(ImageSource.resource(R.drawable.newdownstairscoffee));
         }
 
         if (record.equals("Toilets")) {
 
-
+            SubsamplingScaleImageView imageView = (SubsamplingScaleImageView)findViewById(R.id.imageView);
+            imageView.setImage(ImageSource.resource(R.drawable.newdownstairstoilets));
 
 
         }
@@ -161,7 +159,8 @@ public class GroundFloorFunctions extends AppCompatActivity  {
         if (record.equals("Clear All"))
 
         {
-
+            SubsamplingScaleImageView imageView = (SubsamplingScaleImageView)findViewById(R.id.imageView);
+            imageView.setImage(ImageSource.resource(R.drawable.ecm));
 
         }
 

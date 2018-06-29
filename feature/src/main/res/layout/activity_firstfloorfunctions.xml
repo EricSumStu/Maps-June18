@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#244552"
+    android:background="#1D414F"
     android:screenOrientation="portrait"
     tools:context=".FirstFloorFunctions">
 
